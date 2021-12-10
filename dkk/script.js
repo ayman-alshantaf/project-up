@@ -1,0 +1,189 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function () {
+    stickyHeader();
+  };
+  // Get the header
+  var header = document.getElementById("sticky-header");
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function stickyHeader() {
+    if (window.pageYOffset >= 150) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+
+  //plugin bootstrap minus and plus
+  //http://jsfiddle.net/laelitenetwork/puJ6G/
+  $(".btn-number").click(function (e) {
+    e.preventDefault();
+    fieldName = $(this).attr("data-field");
+    type = $(this).attr("data-type");
+    var input = $("input[name='" + fieldName + "']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+      if (type == "minus") {
+        if (currentVal > input.attr("min")) {
+          input.val(currentVal - 1).change();
+        }
+        if (parseInt(input.val()) == input.attr("min")) {
+          $(this).attr("disabled", true);
+        }
+      } else if (type == "plus") {
+        if (currentVal < input.attr("max")) {
+          input.val(currentVal + 1).change();
+        }
+        if (parseInt(input.val()) == input.attr("max")) {
+          $(this).attr("disabled", true);
+        }
+      }
+    } else {
+      input.val(0);
+    }
+  });
+  $(".input-number").focusin(function () {
+    $(this).data("oldValue", $(this).val());
+  });
+  $(".input-number").change(function () {
+    minValue = parseInt($(this).attr("min"));
+    maxValue = parseInt($(this).attr("max"));
+    valueCurrent = parseInt($(this).val());
+    name = $(this).attr("name");
+    if (valueCurrent >= minValue) {
+      $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr(
+        "disabled"
+      );
+    } else {
+      alert("Sorry, the minimum value was reached");
+      $(this).val($(this).data("oldValue"));
+    }
+    if (valueCurrent <= maxValue) {
+      $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr(
+        "disabled"
+      );
+    } else {
+      alert("Sorry, the maximum value was reached");
+      $(this).val($(this).data("oldValue"));
+    }
+  });
+  $(".input-number").keydown(function (e) {
+    // Allow: backspace, delete, tab, escape, enter and .
+    if (
+      $.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+      // Allow: Ctrl+A
+      (e.keyCode == 65 && e.ctrlKey === true) ||
+      // Allow: home, end, left, right
+      (e.keyCode >= 35 && e.keyCode <= 39)
+    ) {
+      // let it happen, don't do anything
+      return;
+    }
+    // Ensure that it is a number and stop the keypress
+    if (
+      (e.shiftKey || e.keyCode < 48 || e.keyCode > 57) &&
+      (e.keyCode < 96 || e.keyCode > 105)
+    ) {
+      e.preventDefault();
+    }
+  });
+
+  // Add active class to left navbar accordion
+  $(".collapse").on("shown.bs.collapse", function () {
+    $(this).prev().addClass("active-acc");
+  });
+
+  $(".collapse").on("hidden.bs.collapse", function () {
+    $(this).prev().removeClass("active-acc");
+  });
+});
+
+// left-navbar-togglerS onclick function
+// Get left-navbar content and sticky header
+var navCollapse = document.getElementById("left-navbar-collapse");
+var header = document.getElementById("sticky-header");
+// Add/remove classes for show/hide left-navbar and sticky-header
+function navClose() {
+  navCollapse.classList.remove("show");
+  header.classList.remove("d-none");
+}
+
+function navOpen() {
+  navCollapse.classList.add("show");
+  header.classList.add("d-none");
+}
+
+function leftNavbar() {
+  if (navCollapse.classList.contains("show")) {
+    navClose();
+  } else {
+    navOpen();
+  }
+}
+
+// owl-carousel
+var slider = $(".owl-carousel");
+slider.owlCarousel({
+  loop: true, // закольцевать
+  nav: true, // навигация
+  // Перепишем текст кнопок
+  // используем Font Awesome для добавления стрелок
+  navText: [$(".am-next"), $(".am-prev")],
+  dots: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    350: {
+      items: 2,
+    },
+    500: {
+      items: 3,
+    },
+    800: {
+      items: 4,
+    },
+    1000: {
+      items: 6,
+    },
+  },
+});
+
+// button up
+document.querySelector(".fa-chevron-up").addEventListener("click", function () {
+  // кнопка назад
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// Initialise Carousel
+const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+  Dots: false,
+});
+
+// Thumbnails
+const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+  Sync: {
+    target: mainCarousel,
+    friction: 0,
+  },
+  Dots: false,
+  Navigation: false,
+  center: true,
+  slidesPerPage: 1,
+  infinite: false,
+});
+
+// Customize Fancybox
+Fancybox.bind('[data-fancybox="gallery"]', {
+  Carousel: {
+    on: {
+      change: (that) => {
+        mainCarousel.slideTo(mainCarousel.findPageForSlide(that.page), {
+          friction: 0,
+        });
+      },
+    },
+  },
+});
+
+//  Imported JavaScirpt FILE ///////////////////////////////////////////////////////////////////////

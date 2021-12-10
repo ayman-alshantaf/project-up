@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DKK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" viewport-fit=cover>
+    <meta name="author" content="Martina Antalovova">
+    <meta name="description" content="DKK">
+    <meta property="og:title" content="DKK">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="DKK">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="" sizes="16x16" type="image/png">
+    <!-- <link rel="icon" href="" sizes="32x32" type="image/png">
+    <link rel="icon" href="" sizes="96x96" type="image/png"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="dkk/style.css">
+    <link rel="stylesheet" href="dkk/menu.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <link rel="stylesheet" href="dkk/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="dkk/owl-carousel/owl.theme.default.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="sticky-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col left-navbar">
+                        <button class="left-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse"onclick="leftNavbar()">
+                            <input type="checkbox" />
+                            <span class="tog-icon"></span>
+                            <span class="tog-icon"></span>
+                            <span class="tog-icon"></span>
+                            <span class="tog-menu">Menu</span>
+                        </button>
+                    </div>
+                    <div class="col d-none d-md-block">
+                        <div class="brand">
+                            <a class="navbar-brand" href="#">Website.com</a>
+                        </div>
+                    </div>
+                    <div class="col ml-auto">
+                        <div class="top-icons text-right">
+                            <ul class="search list-unstyled d-inline-block">
+                                <li class="dropdown">
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <form method="GET" action="" class="search ">
+                                            <input class="form-control" name="search" maxlength="255" placeholder="Søg" data-request-url="" autocomplete="off" type="search">
+                                            <button class="btn" type="submit"></button>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="minicart empty list-unstyled d-inline-block">
+                                <li class="dropdown" data-backdrop="static" data-dropdown-align="right" data-reload-name="" data-reload-url="">
+                                    <a href="" class="hover-border" data-toggle="dropdown">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="count badge badge-pill">
+                                            0
+                                        </span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <div class="cart-panel empty">
+                                            <span class="empty-cart-message">
+                                                Din indkøbskurv er tom!
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="left-navbar-collapse" class="left-navbar-collapse" id="navbar-collapse">
+            <div class="left-navbar-wrap">
+                <div class="first-line-left-menu">
+                    <div class="first-line-left-menu-arrow">
+                        <a href=""><i class="arrow left"></i></a>
+                    </div>
+                    <div class="first-line-left-menu-position">
+                        <a href="">Yamaha</a>
+                    </div>
+                    <div class="first-line-left-menu-home">
+                        <a href=""><i class="bi bi-house-door-fill"></i></a>
+                    </div>
+                </div>
+                <div class="left-nav-items">
+                    <ul class="navbar-nav" id="accordion">
+                        <li class="nav-item">
+                            <a class="nav-link active-acc" data-toggle="collapse" href="#collapseTwo">Informationer
+                                <i class="fas fa-caret-down"></i>
+                            </a>
+                            <div id="collapseTwo" class="collapse show" data-parent="#accordion">
+                                <ul class="list-group">
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">Fortrolighed</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="nav-link">Fragt og levering</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="nav-link">Firma profil</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="nav-link">Kontakt os</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" href="#collapseOne">Informationer222
+                                <i class="fas fa-caret-down"></i>
+                            </a>
+                            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                <ul class="list-group">
+                                    <li class="nav-item">
+                                        <a href="" class="nav-link">Fortrolighed</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="nav-link">Fragt og levering</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="nav-link">Firma profil</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="nav-link">Kontakt os</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lorem ipsum</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="close-btn" onclick="navClose()">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+        <div class="container first-line-white">
+            <div class="row">
+                <div class="col-12 text-right">
+                    <a href="" class="min-konto">Min konto</a>
+                    <div class="userbar d-inline-block">
+                        <a class="login hover-border d-block" href="#" title="Login"
+                           data-toggle="modal" data-target="#login-modal">Log ind</a>
+                    </div>
+
+                    <ul class="currency list-unstyled d-inline-block">
+                        <li class="dropdown">
+                            <a href="#"  class="dropdown-toggle" data-toggle="dropdown">
+
+                                <span class="title">Currency: EUR</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu currency-switcher list-unstyled">
+                                <li class="currency-DKK">
+                                    <a href="#" data-url="">
+                                        DKK
+                                    </a>
+                                </li>
+                                <li class="currency-EUR active">
+                                    <a href="#" data-url="">
+                                        EUR
+                                    </a>
+                                </li>
+                                <li class="currency-NOK">
+                                    <a href="#" data-url="">
+                                        NOK
+                                    </a>
+                                </li>
+                                <li class="currency-SEK">
+                                    <a href="#" data-url="">
+                                        SEK
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-menu container first-line-gray">
+            <div class="row">
+                <div class="col left-navbar">
+                    <button class="left-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse"onclick="leftNavbar()">
+                        <input type="checkbox" />
+                        <span class="tog-icon"></span>
+                        <span class="tog-icon"></span>
+                        <span class="tog-icon"></span>
+                        <span class="tog-menu">Menu</span>
+                    </button>
+                </div>
+                <div class="col mr-auto d-none d-md-block">
+                    <div class="curr-lang ">
+                        <ul class="currency list-unstyled d-inline-block">
+                            <li class="dropdown">
+                                <a href="#" id="current" class="dropdown-toggle hover-border" data-toggle="dropdown">
+                                    <span class="title">DKK</span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu currency-switcher list-unstyled">
+                                    <li class="currency-DKK active">
+                                        <a href="#" data-url="">
+                                            DKK
+                                        </a>
+                                    </li>
+                                    <li class="currency-EUR">
+                                        <a href="#" data-url="">
+                                            EUR
+                                        </a>
+                                    </li>
+                                    <li class="currency-NOK">
+                                        <a href="#" data-url="">
+                                            NOK
+                                        </a>
+                                    </li>
+                                    <li class="currency-SEK">
+                                        <a href="#" data-url="">
+                                            SEK
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="langs list-unstyled d-inline-block">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle hover-border" href="#" data-toggle="dropdown">
+                                    <img src="dkk/images/dk.gif">
+                                    <span class="title">DA</span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="active">
+                                        <a class="lang-da" href="">
+                                            <img src="dkk/images/dk.gif" alt="Lang option">
+                                            <span>DA</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="lang-en" href="">
+                                            <img src="dkk/images/gb.gif" alt="Lang option">
+                                            <span>EN</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="lang-no" href="">
+                                            <img src="dkk/images/no.gif" alt="Lang option">
+                                            <span>NO</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="lang-sv" href="">
+                                            <img src="dkk/images/se.gif" alt="Lang option">
+                                            <span>SV</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col ml-auto">
+                    <div class="top-icons text-right">
+                        <ul class="search list-unstyled d-inline-block">
+                            <li class="dropdown">
+                                <a href="#" class="hover-border" data-toggle="dropdown">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <form method="GET" action="" class="search ">
+                                        <input class="form-control" name="search" maxlength="255" placeholder="Søg" data-request-url="" autocomplete="off" type="search">
+                                        <button class="btn" type="submit"></button>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="userbar d-inline-block">
+                            <a class="login hover-border d-block" href="#" title="Login" data-toggle="modal" data-target="#login-modal">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                        <ul class="minicart empty list-unstyled d-inline-block">
+                            <li class="dropdown" data-backdrop="static" data-dropdown-align="right" data-reload-name="" data-reload-url="">
+                                <a href="" class="hover-border" data-toggle="dropdown">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span class="count badge badge-pill">
+                                        0
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <div class="cart-panel empty">
+                                        <span class="empty-cart-message">
+                                            Din indkøbskurv er tom!
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container logo-head">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <a href=""><img src="dkk/images/Logo.jpeg" alt="Logo"></a>
+
+                </div>
+                <div class="col-12 col-lg-6 search-row">
+                    <form>
+                        <input type="search" name="search" class="search"
+                               placeholder="Søg efter..."><input type="button" value="Søg" class="button-search">
+                    </form>
+                </div>
+                <div class="col-12 col-lg-3 basket">
+                    <ul class="minicart empty list-unstyled d-inline-block">
+                        <li class="dropdown" data-backdrop="static" data-dropdown-align="right" data-reload-name="" data-reload-url="">
+                            <a href="" class="hover-border" data-toggle="dropdown">
+                                <i class="fas fa-shopping-cart"></i><input type="search" class="basket-search"
+                                                                           placeholder="Indkøbskurv">
+                                <span class="count badge badge-pill">
+                                        0
+                                    </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <div class="cart-panel empty">
+                                        <span class="empty-cart-message">
+                                            Din indkøbskurv er tom!
+                                        </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="nav-wrap d-none d-md-block top-menu-horizontal">
+            <div class="container">
+                <nav class="navbar navbar-expand-md">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="btn dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink1"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU ITEM 01</a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                <div class="dropdown-menu-first-line">
+                                    <a class="dropdown-item text-bold" href="dkk/product.html">Second page</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                </div>
+                                <div class="dropdown-menu-next-line">
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="btn dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink2"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU ITEM 01</a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                <div class="dropdown-menu-first-line">
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                </div>
+                                <div class="dropdown-menu-next-line">
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                </div>
+                                <div class="dropdown-menu-next-line">
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink3"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU ITEM 01</a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                                <div class="dropdown-menu-first-line">
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                </div>
+                                <div class="dropdown-menu-next-line">
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink4"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU ITEM 01</a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink4">
+                                <div class="dropdown-menu-first-line">
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                </div>
+                                <div class="dropdown-menu-next-line">
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn dropdown-toggle nav-link" href="#" role="button" id="dropdownMenuLink5"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MENU ITEM 01</a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink5">
+                                <div class="dropdown-menu-first-line">
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item text-bold" href="#">ABCDEF</a>
+                                </div>
+                                <div class="dropdown-menu-next-line">
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                    <a class="dropdown-item" href="#">ABCDEF</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid way-user-container">
+        <div class="row">
+            <div class="offset-lg-1 col">
+                <a href="" class="slash">/</a>
+                <a href="" class="way-user">PROPELLER</a>
+                <a href="" class="slash">/</a>
+                <a href="" class="way-user">ORIGINALE PROPELLER</a>
+                <a href="" class="slash">/</a>
+                <a href="" class="way-user way-user-active">Yamaha</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="offset-1 col-2 category">
+                <h3>KATEGORIER</h3>
+                <nav class="navbar navigation-category">
+                    <ul class="list-category">
+                        <li class="category-line-li"><a href="" class="category-line-a">PÅHÆNGSMOTORER</a></li>
+                        <li class="category-line-li"><a href="" class="category-line-a">PÅHÆNGSMOTORER</a></li>
+                        <li class="category-line-li"><a href="" class="category-line-a">PÅHÆNGSMOTORER</a></li>
+                        <li class="category-line-li">
+                            <a href="" class="category-line-a category-bold-item">PROPELLER</a>
+                            <ul class="list-category">
+                                <li class="category-line-li">
+                                    <a href="" class="category-line-a category-bold-item">ORIGINALE PROPELLER</a>
+                                    <ul class="list-category">
+                                        <li class="category-line-li"><a href="" class="category-line-a">PÅHÆNGSMOTORER</a></li>
+                                        <li class="category-line-li"><a href="" class="category-line-a">PÅHÆNGSMOTORER</a></li>
+                                        <li class="category-line-li">
+                                            <a href="" class="category-line-a category-bold-item">Yamaha</a>
+                                            <ul class="list-category">
+                                                <li class="category-line-li"><a href="" class="category-line-a">Aluminium Propeller</a></li>
+                                                <li class="category-line-li"><a href="" class="category-line-a">Aluminium Propeller</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="accordion" id="according-first-elem-margin">
+                    <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle" checked/>
+                    <label for="toggle1">Mærker</label>
+                    <section class="accordion-second">
+                        <a href="" class="accordion-second-href">
+                            <input id="filter2" type="checkbox" class="filter-toggle" name="toggle"/>
+                            <label for="filter2">Yamaha ()</label>
+                        </a>
+                        <a href="" class="accordion-second-href">
+                            <input id="filter2-2" type="checkbox" class="filter-toggle" name="toggle"/>
+                            <label for="filter2-2">Yamaha ()</label>
+                        </a>
+                    </section>
+                </div>
+                <div class="accordion">
+                    <input id="toggle2" type="checkbox" class="accordion-toggle" name="toggle" checked/>
+                    <label for="toggle2">Passer til</label>
+                    <section class="accordion-second">
+                        <a href="" class="accordion-second-href">
+                            <input id="filter3" type="checkbox" class="filter-toggle" name="toggle"/>
+                            <label for="filter3">Yamaha ()</label>
+                        </a>
+                    </section>
+                </div>
+                <div class="accordion">
+                    <input id="toggle3" type="checkbox" class="accordion-toggle" name="toggle" checked/>
+                    <label for="toggle3">Passer til</label>
+                    <section class="accordion-second">
+                        <a href="" class="accordion-second-href">
+                            <input id="filter4" type="checkbox" class="filter-toggle" name="toggle"/>
+                            <label for="filter4">Yamaha ()</label>
+                        </a>
+                    </section>
+                </div>
+                <div class="accordion">
+                    <input id="toggle4" type="checkbox" class="accordion-toggle" name="toggle" checked/>
+                    <label for="toggle4">Passer til</label>
+                    <section class="accordion-second">
+                        <a href="" class="accordion-second-href">
+                            <input id="filter1" type="checkbox" class="filter-toggle" name="toggle"/>
+                            <label for="filter1">Yamaha ()</label>
+                        </a>
+                    </section>
+                </div>
+                <div class="fotorama" data-nav="false"
+                     data-width="99%"
+                     data-height="400"
+                     data-ratio="400/676" data-fit="contain">
+                    <div class="recommendations recommendations-slider text-center">
+                        <div class="recommendations-photo-link recommendations-slider-photo-link">
+                            <a href="">
+                                <img src="dkk/images/recomendation1.jpg" alt="">
+                                <h4>AIR TOP 2000 ST DIESEL 2KW, 12V MED EKSTRA UDSTYR</h4>
+                            </a>
+                            <h5 class="price price-set">€1,477.73</h5>
+                            <h5 class="last-price">€1,963.79</h5>
+                            <h5 class="difference">Du sparer: €486.06</h5>
+                        </div>
+                    </div>
+                    <div class="recommendations recommendations-slider text-center">
+                        <div class="recommendations-photo-link recommendations-slider-photo-link">
+                            <a href="">
+                                <img src="dkk/images/recomendation1.jpg" alt="">
+                                <h4>AIR TOP 2000 ST DIESEL 2KW, 12V MED EKSTRA UDSTYR</h4>
+                            </a>
+                            <h5 class="price price-set">€1,477.73</h5>
+                            <h5 class="last-price">€1,963.79</h5>
+                            <h5 class="difference">Du sparer: €486.06</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col content-center">
+                <a href="" id="content-center-back"><i class="bi bi-chevron-left"></i>ORIGINALE PROPELLER</a>
+                <h1>Yamaha</h1>
+                <div class="content-center-block-menu">
+                    <label for="selectvalue">Sortering:</label>
+                    <select id="selectvalue">
+                        <option class="content-center-menu-item">Anbefalet</option>
+                        <option class="content-center-menu-item">Priser: Stigende</option>
+                        <option class="content-center-menu-item">Priser: Faldende</option>
+                        <option class="content-center-menu-item">Priser: Stigende</option>
+                        <option class="content-center-menu-item">Priser: Faldende</option>
+                    </select>
+                    <a href="" class="content-center-bi">
+                        <i class="bi bi-grid-fill"></i>
+                    </a>
+                    <a href="" class="content-center-bi">
+                        <i class="bi bi-border-width"></i>
+                    </a>
+                </div>
+                <div class="content-center-pages">
+                    <ul>
+                        <li><a href="" id="content-center-pages1">1</a></li><li><a href="">2</a></li><li><a href="">3</a></li>
+                        <li><a href="">Næste</a></li>
+                        <li><a href="">Sidste</a></li>
+                    </ul>
+                </div>
+                <div class="row content-center-products">
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <a href="">
+                            <div class="content-center-product">
+                                <div class="fotorama"
+                                     data-width="99%"
+                                     data-ratio="550/676" data-fit="contain">
+                                    <div class="text-center">
+                                        <div class="">
+                                            <a href="">
+                                                <img src="dkk/images/recomendation1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="">
+                                            <a href="">
+                                                <img src="dkk/images/recomendation1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="label-sale">
+                                    <h6>-20%</h6>
+                                </div>
+                                <div class="label-popular">
+                                    <h5>Populær</h5>
+                                </div>
+                                <div class="dropdown-product-menu-photo">
+                                    <a href="">Se kort info</a>
+                                </div>
+                                <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
+                                <p>Pris fra</p>
+                                <h5>€32.42</h5>
+                                <h6>På lager</h6>
+                                <div class="dropdown-product-menu-bottom">
+                                    <button class="dropdown-btn">Se produktet</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <a href="">
+                            <div class="content-center-product">
+                                <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
+                                <div class="dropdown-product-menu-photo">
+                                    <a href="">Se kort info</a>
+                                </div>
+                                <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
+                                <h5>€32.42</h5>
+                                <h6>På lager</h6>
+                                <div class="dropdown-product-menu-bottom">
+                                    <button class="dropdown-btn">Se produktet</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <a href="">
+                            <div class="content-center-product">
+                                <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
+                                <div class="dropdown-product-menu-photo">
+                                    <a href="">Se kort info</a>
+                                </div>
+                                <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
+                                <h5>€32.42</h5>
+                                <h2 class="last-price text-on-center">€1,963.79</h2>
+                                <h6>På lager</h6>
+                                <div class="dropdown-product-menu-bottom">
+                                    <button class="dropdown-btn">Se produktet</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <a href="">
+                            <div class="content-center-product">
+                                <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
+                                <div class="dropdown-product-menu-photo">
+                                    <a href="">Se kort info</a>
+                                </div>
+                                <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
+                                <h5>€32.42</h5>
+
+                                <h6 class="not-have-product">Leveringstid er 7-10 dag(e)</h6>
+                                <div class="dropdown-product-menu-bottom">
+                                    <button class="dropdown-btn">Se produktet</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 column-plug"></div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <a href="">
+                            <div class="content-center-product">
+                                <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
+                                <div class="dropdown-product-menu-photo">
+                                    <a href="">Se kort info</a>
+                                </div>
+                                <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
+                                <p>Pris fra</p>
+                                <h5>€32.42</h5>
+                                <h2 class="last-price text-on-center">€1,963.79</h2>
+                                <h6>På lager</h6>
+                                <div class="dropdown-product-menu-bottom">
+                                    <button class="dropdown-btn">Se produktet</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <a href="">
+                            <div class="content-center-product">
+                                <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
+                                <div class="dropdown-product-menu-photo">
+                                    <a href="">Se kort info</a>
+                                </div>
+                                <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
+                                <h5>€32.42</h5>
+                                <h2 class="last-price text-on-center">€1,963.79</h2>
+                                <h6>På lager</h6>
+                                <div class="dropdown-product-menu-bottom">
+                                    <button class="dropdown-btn">Se produktet</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <a href="">
+                            <div class="content-center-product">
+                                <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
+                                <div class="dropdown-product-menu-photo">
+                                    <a href="">Se kort info</a>
+                                </div>
+                                <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
+                                <h5>€32.42</h5>
+                                <h2 class="last-price text-on-center">€1,963.79</h2>
+                                <h6>På lager</h6>
+                                <div class="dropdown-product-menu-bottom">
+                                    <button class="dropdown-btn">Se produktet</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 col-6">
+                        <a href="">
+                            <div class="content-center-product">
+                                <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
+                                <div class="dropdown-product-menu-photo">
+                                    <a href="">Se kort info</a>
+                                </div>
+                                <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
+                                <h5>€32.42</h5>
+                                <h2 class="last-price text-on-center">€1,963.79</h2>
+                                <h6 class="not-have-product">Leveringstid er 7-10 dag(e)</h6>
+                                <div class="dropdown-product-menu-bottom">
+                                    <button class="dropdown-btn">Se produktet</button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 column-plug"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scrollup">
+        <!-- Иконка fa-chevron-up (Font Awesome) -->
+        <i class="fa fa-chevron-up"></i>
+    </div>
+
+    <footer role="contentinfo">
+        <div class="container-fluid footer-site">
+            <div class="row">
+                <div class="offset-xl-1 col-lg-25 col-12">
+                    <img src="dkk/images/Logo-billigpropel-forside.png" alt="">
+                    <p>Billigpropel.dk er generalimportør af bl.a. Hidea, JP Oliefyr og en lang række produkter.
+                        Disse produkter sælges til dig kun med os som mellemled - det sikre dit de absolut bedste
+                        online priser. Herudover sælger vi en lang række kendte mærker som Yamaha Parts, Webasto og
+                        Hempel. Vi er DKs ubetingede største største webshop indenfor marinebrachen og vi tilbyder
+                        telefonsupport alle hverdage mellem 12 - 16:00.</p>
+                </div>
+                <div class="col-lg-15 col-12">
+                    <h3>FIND OS PÅ</h3>
+                    <div><a href="">FACEBOOK</a></div>
+                    <div><a href="">YOUTUBE</a></div>
+                </div>
+                <div class="col-lg-15 col-12">
+                    <h3>INFORMATIONER</h3>
+                    <div><a href="">FORTROLIGHED</a></div>
+                    <div><a href="">FORTROLIGHED</a></div>
+                    <div><a href="">FORTROLIGHED</a></div>
+                    <div><a href="">FORTROLIGHED</a></div>
+                    <div><a href="">FORTROLIGHED</a></div>
+                </div>
+                <div class="col-lg-15 col-12">
+                    <h3>ADRESSE</h3>
+                    <div><h6>BILLIGPROPEL.DK</h6></div>
+                    <div><h6>KEJLSTRUPVEJ 241</h6></div>
+                    <div><h6>8600 SILKEBORG</h6></div>
+                    <div><h6>TELEFON: 30 36 55 33</h6></div>
+                    <div><h6>8600 SILKEBORG</h6></div>
+                </div>
+                <div class="col search-row-footer">
+                    <h3 id="tilmeld-h3">TILMELD NYHEDSBREV</h3>
+                    <form>
+                        <input type="email" name="email" class="email"
+                               placeholder="Email-adresse"><input type="button" value=">" class="button-email">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="login-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="#" class="user-register">
+                        Har du endnu ikke en konto? Opret
+                    </a>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="dkk/owl-carousel/owl.carousel.js"></script>
+    <script src="dkk/script.js" type="text/javascript"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "",
+            // "logo": "",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "",
+                "email": "",
+                "contactType": "customer service"
+            }]
+        }
+    </script>
+
+</body>
+
+</html>
