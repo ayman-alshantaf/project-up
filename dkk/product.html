@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.min.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -29,7 +28,6 @@
 
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl-carousel/owl.theme.default.css">
-
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
 
@@ -52,8 +50,14 @@
                     </button>
                 </div>
                 <div class="col d-none d-md-block">
-                    <div class="brand">
-                        <a class="navbar-brand" href="#">Website.com</a>
+<!--                    <div class="brand">-->
+<!--                        <a class="navbar-brand" href="#">Website.com</a>-->
+<!--                    </div>-->
+                    <div class="search-site">
+                        <div class="content-search">
+                            <input type="search" placeholder="Søg">
+                            <i class="fa fa-search"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="col ml-auto">
@@ -523,29 +527,28 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" style="overflow: hidden">
     <div class="row product-container">
         <div class="offset-lg-1 col-12 col-lg-7 product-container-left-content">
             <h1 class="text-center">Air Top 2000 ST diesel 2kw, 12V, inkl. kit</h1>
             <div id="mainCarousel" class="carousel">
-                <div class="carousel__slide" data-src="images/fotorama1.jpg" data-fancybox="gallery">
-                    <img class="carousel-slide-img" src="images/fotorama1.jpg" alt="fotorama1">
+                <div class="carousel__slide " data-src="images/fotorama1.jpg" data-fancybox="gallery">
+                    <img class="carousel-slide-img zoom"  src="images/fotorama1.jpg" data-zoom-image="images/largefotorama1.jpg" alt="fotorama1" >
                 </div>
                 <div class="carousel__slide" data-src="images/fotorama2.jpg" data-fancybox="gallery">
-                    <img class="carousel-slide-img" src="images/fotorama2.jpg" alt="fotorama2">
+                    <img class="carousel-slide-img zoom" src="images/fotorama2.jpg" data-zoom-image="images/largefotorama2.jpg" alt="fotorama2" xoriginal="images/fotorama2.jpg">
                 </div>
                 <div class="carousel__slide" data-src="images/fotorama3.jpg" data-fancybox="gallery">
-                    <img class="carousel-slide-img" src="images/fotorama3.jpg" alt="fotorama3">
+                    <img class="carousel-slide-img zoom" src="images/fotorama3.jpg" data-zoom-image="images/largefotorama3.jpg" alt="fotorama3">
                 </div>
                 <div class="carousel__slide" data-src="images/fotorama2.jpg" data-fancybox="gallery">
-                    <img class="carousel-slide-img" src="images/fotorama2.jpg" alt="fotorama2">
+                    <img class="carousel-slide-img zoom" src="images/fotorama2.jpg" data-zoom-image="images/largefotorama2.jpg" alt="fotorama2">
                 </div>
                 <div class="carousel__slide" data-src="https://www.youtube.com/watch?v=z2X2HaTvkl8" data-fancybox="gallery">
-                    <img class="carousel-slide-img" src="http://i3.ytimg.com/vi/z2X2HaTvkl8/hqdefault.jpg" height="200" alt="video">
+                    <img class="carousel-slide-img " src="http://i3.ytimg.com/vi/z2X2HaTvkl8/hqdefault.jpg" height="200" alt="video">
                     <i class="btn-carousel-video-big bi bi-play-circle"></i>
                 </div>
             </div>
-
             <div id="thumbCarousel" class="carousel">
                 <div class="carousel__slide">
                     <img class="panzoom__content" src="images/fotorama1.jpg" alt="fotorama1">
@@ -717,11 +720,6 @@
     </div>
 </div>
 
-
-
-
-
-
 <div class="slider_nav">
     <button class="am-next"><i class="fas fa-chevron-left"></i></button>
     <button class="am-prev"><i class="fas fa-chevron-right"></i></button>
@@ -790,15 +788,18 @@
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6"
+        crossorigin="anonymous">
+</script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="owl-carousel/owl.carousel.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-
-
-
+<script src="../js/slick.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ez-plus.js"></script>
+<script src="../js/mainScript.js"></script>
 <script src="script.js" type="text/javascript"></script>
 <script type="application/ld+json">
     {

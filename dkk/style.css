@@ -237,7 +237,41 @@ a.hover-border:focus:before {
 .top-menu ul:focus {
     outline: 0;
 }
+.search-site {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.search-site .content-search{
+    width: 45%;
+    position: relative;
+    height: 71%;
+    display: flex;
+    align-items: center;
+}
 
+.search-site input{
+    border: 1px solid rgba(0, 0, 0, 0.34);
+    padding: 8px 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.search-site .content-search i{
+    position: absolute;
+    z-index: 1000;
+    right: 2%;
+    font-size: 25px;
+    opacity: 0.4;
+}
+.search-site input:focus{
+    outline: none;
+}
+.search-site input:focus  .content-search i{
+    opacity: 0.8;
+
+}
 .curr-lang,
 .brand,
 .top-icons {
@@ -1594,7 +1628,30 @@ input::-webkit-input-placeholder {
     visibility: hidden;
     transition: 0.55s opacity, 0.55s visibility;
 }
-
+.dropdown-product-menu-photo  button.btn-primary {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    /* margin: 0; */
+    background-color: #a8cd8c !important;
+}
+.dropdown-product-menu-photo  button.btn-primary:hover{
+    background-color: #a8cd8c !important;
+}
+.dropdown-product-menu-photo button.btn-primary{
+    background-color: #a8cd8c !important;
+}
+.dropdown-product-menu-photo  button.btn-primary:active{
+    background-color: #a8cd8c !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.dropdown-product-menu-photo  button.btn-primary:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
 .content-center-product:hover > .dropdown-product-menu-photo {
     opacity: 1;
     visibility: visible;
@@ -1672,6 +1729,10 @@ input::-webkit-input-placeholder {
     font-family: Ubuntu, Clear Sans, Arial, sans-serif;
     font-size: 28px;
     font-weight: 100;
+}
+.ZoomContainer {
+    display: none;
+
 }
 
 .stock {
@@ -2000,6 +2061,7 @@ Carousel
     padding: 0;
     margin-top: 100px;
     margin-bottom: 70px;
+
 }
 
 #mainCarousel .carousel__button.is-prev {
@@ -2731,11 +2793,18 @@ Carousel
     }
     .billigpropel1 {
         right: -1%;
-
     }
 }
 @media only screen and (max-width: 1270px) {
     .billigpropel1 ,.billigpropel  {
         display: none;
     }
+}
+
+
+
+
+.product-list .content-center-products img {
+     margin-top: 0px;
+     margin-left: 0px;
 }

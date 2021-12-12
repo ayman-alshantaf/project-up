@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="dkk/style.css">
     <link rel="stylesheet" href="dkk/menu.min.css">
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -30,6 +28,7 @@
 
     <link rel="stylesheet" href="dkk/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="dkk/owl-carousel/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
 
 </head>
 
@@ -48,8 +47,14 @@
                         </button>
                     </div>
                     <div class="col d-none d-md-block">
-                        <div class="brand">
-                            <a class="navbar-brand" href="#">Website.com</a>
+<!--                        <div class="brand">-->
+<!--                            <a class="navbar-brand" href="#">Website.com</a>-->
+<!--                        </div>-->
+                        <div class="search-site">
+                            <div class="content-search">
+                                <input type="search" placeholder="Søg">
+                                <i class="fa fa-search"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col ml-auto">
@@ -506,20 +511,9 @@
         </div>
     </header>
 
-    <div class="container-fluid way-user-container">
-        <div class="row">
-            <div class="offset-lg-1 col">
-                <a href="" class="slash">/</a>
-                <a href="" class="way-user">PROPELLER</a>
-                <a href="" class="slash">/</a>
-                <a href="" class="way-user">ORIGINALE PROPELLER</a>
-                <a href="" class="slash">/</a>
-                <a href="" class="way-user way-user-active">Yamaha</a>
-            </div>
-        </div>
-    </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid product-list">
+
         <div class="row">
             <div class="offset-1 col-2 category">
                 <h3>KATEGORIER</h3>
@@ -676,7 +670,96 @@
                                     <h5>Populær</h5>
                                 </div>
                                 <div class="dropdown-product-menu-photo">
-                                    <a href="">Se kort info</a>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        <a >Se kort info</a>
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="max-width: 90%">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">details Product</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid" style="overflow: hidden">
+                                                    <div class="row product-container">
+                                                        <div class="offset-lg-1 col-12 col-lg-7 product-container-left-content">
+                                                            <h1 class="text-center">Air Top 2000 ST diesel 2kw, 12V, inkl. kit</h1>
+                                                            <div id="mainCarousel" class="carousel">
+                                                                <div class="carousel__slide " data-src="./dkk/images/fotorama1.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom"  src="./dkk/images/fotorama1.jpg" data-zoom-image="./dkk/images/largefotorama1.jpg" alt="fotorama1" >
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="/dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2" xoriginal="images/fotorama2.jpg">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama3.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama3.jpg" data-zoom-image="./dkk/images/largefotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                            <div id="thumbCarousel" class="carousel">
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama1.jpg" alt="fotorama1">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-lg-4 product-container-right-content" >
+                                                            <h5 class="stock" >På lager</h5>
+                                                            <h5 class="product-model-varenr">Model/varenr.: 9034777C</h5>
+                                                            <h2>€1,343.33</h2>
+                                                            <h6 class="last-price">€1,679.33</h6>
+                                                            <h5 class="text-bold">Du sparer: €336.00</h5>
+                                                            <h5 class="text-bold product-model">Model: 12 Volt DIESEL</h5>
+                                                            <h5 class="text-bold">Effekt (KW): 2 KW</h5>
+                                                            <button class="buy-button">Læg i kurv</button>
+                                                            <input class="form-controls " id="article-qty-103729" name="quantity[103729]" type="number" value="1" min="1" step="1" data-quantity-in-stock="10" data-form-controls-group-id="product-details">
+                                                            <h3>Air Top 2000 ST diesel 2kw, 12V med MultiControl</h3>
+                                                            <p class="product-container-contains" style="text-align: left">
+                                                                Ovenstående varmerkit indeholder foruden varmeren:<br>
+                                                                1. brændstofspumpe med specielt lyddæmpet beslag,<br>
+                                                                2. universal monteringsbeslag for varmer,<br>
+                                                                3. udstødningslyddæmper,<br>
+                                                                4. indsugningslyddæmper,<br>
+                                                                5. skroggennemføring,<br>
+                                                                6. dykrør for tank,<br>
+                                                                7. brændstofsfilter,<br>
+                                                                8. 5m mecanylslange for brændstoffremføring,<br>
+                                                                9. specielt ledningsnet,<br>
+                                                                10. temperatur fjernføler,<br>
+                                                                11. diverse fittings,<br>
+                                                                12. Digital panel (MultiControl) til temperaturkontrol.
+                                                            </p>
+                                                            <a href="#benefits" class="more-info">Mere information</a>
+                                                            <form>
+                                                                <label for="product-select-value"></label><select id="product-select-value" class="product-select-value">
+                                                                <option>12 mdr.</option>
+                                                                <option>24 mdr.</option>
+                                                            </select>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
                                 <p>Pris fra</p>
@@ -693,7 +776,96 @@
                             <div class="content-center-product">
                                 <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
                                 <div class="dropdown-product-menu-photo">
-                                    <a href="">Se kort info</a>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        <a >Se kort info</a>
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="max-width: 90%">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">details Product</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid" style="overflow: hidden">
+                                                    <div class="row product-container">
+                                                        <div class="offset-lg-1 col-12 col-lg-7 product-container-left-content">
+                                                            <h1 class="text-center">Air Top 2000 ST diesel 2kw, 12V, inkl. kit</h1>
+                                                            <div id="mainCarousel" class="carousel">
+                                                                <div class="carousel__slide " data-src="./dkk/images/fotorama1.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom"  src="./dkk/images/fotorama1.jpg" data-zoom-image="./dkk/images/largefotorama1.jpg" alt="fotorama1" >
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="/dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2" xoriginal="images/fotorama2.jpg">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama3.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama3.jpg" data-zoom-image="./dkk/images/largefotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                            <div id="thumbCarousel" class="carousel">
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama1.jpg" alt="fotorama1">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-lg-4 product-container-right-content" >
+                                                            <h5 class="stock" >På lager</h5>
+                                                            <h5 class="product-model-varenr">Model/varenr.: 9034777C</h5>
+                                                            <h2>€1,343.33</h2>
+                                                            <h6 class="last-price">€1,679.33</h6>
+                                                            <h5 class="text-bold">Du sparer: €336.00</h5>
+                                                            <h5 class="text-bold product-model">Model: 12 Volt DIESEL</h5>
+                                                            <h5 class="text-bold">Effekt (KW): 2 KW</h5>
+                                                            <button class="buy-button">Læg i kurv</button>
+                                                            <input class="form-controls " id="article-qty-103729" name="quantity[103729]" type="number" value="1" min="1" step="1" data-quantity-in-stock="10" data-form-controls-group-id="product-details">
+                                                            <h3>Air Top 2000 ST diesel 2kw, 12V med MultiControl</h3>
+                                                            <p class="product-container-contains" style="text-align: left">
+                                                                Ovenstående varmerkit indeholder foruden varmeren:<br>
+                                                                1. brændstofspumpe med specielt lyddæmpet beslag,<br>
+                                                                2. universal monteringsbeslag for varmer,<br>
+                                                                3. udstødningslyddæmper,<br>
+                                                                4. indsugningslyddæmper,<br>
+                                                                5. skroggennemføring,<br>
+                                                                6. dykrør for tank,<br>
+                                                                7. brændstofsfilter,<br>
+                                                                8. 5m mecanylslange for brændstoffremføring,<br>
+                                                                9. specielt ledningsnet,<br>
+                                                                10. temperatur fjernføler,<br>
+                                                                11. diverse fittings,<br>
+                                                                12. Digital panel (MultiControl) til temperaturkontrol.
+                                                            </p>
+                                                            <a href="#benefits" class="more-info">Mere information</a>
+                                                            <form>
+                                                                <label for="product-select-value"></label><select id="product-select-value" class="product-select-value">
+                                                                <option>12 mdr.</option>
+                                                                <option>24 mdr.</option>
+                                                            </select>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
                                 <h5>€32.42</h5>
@@ -709,7 +881,96 @@
                             <div class="content-center-product">
                                 <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
                                 <div class="dropdown-product-menu-photo">
-                                    <a href="">Se kort info</a>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        <a >Se kort info</a>
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="max-width: 90%">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">details Product</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid" style="overflow: hidden">
+                                                    <div class="row product-container">
+                                                        <div class="offset-lg-1 col-12 col-lg-7 product-container-left-content">
+                                                            <h1 class="text-center">Air Top 2000 ST diesel 2kw, 12V, inkl. kit</h1>
+                                                            <div id="mainCarousel" class="carousel">
+                                                                <div class="carousel__slide " data-src="./dkk/images/fotorama1.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom"  src="./dkk/images/fotorama1.jpg" data-zoom-image="./dkk/images/largefotorama1.jpg" alt="fotorama1" >
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="/dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2" xoriginal="images/fotorama2.jpg">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama3.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama3.jpg" data-zoom-image="./dkk/images/largefotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                            <div id="thumbCarousel" class="carousel">
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama1.jpg" alt="fotorama1">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-lg-4 product-container-right-content" >
+                                                            <h5 class="stock" >På lager</h5>
+                                                            <h5 class="product-model-varenr">Model/varenr.: 9034777C</h5>
+                                                            <h2>€1,343.33</h2>
+                                                            <h6 class="last-price">€1,679.33</h6>
+                                                            <h5 class="text-bold">Du sparer: €336.00</h5>
+                                                            <h5 class="text-bold product-model">Model: 12 Volt DIESEL</h5>
+                                                            <h5 class="text-bold">Effekt (KW): 2 KW</h5>
+                                                            <button class="buy-button">Læg i kurv</button>
+                                                            <input class="form-controls " id="article-qty-103729" name="quantity[103729]" type="number" value="1" min="1" step="1" data-quantity-in-stock="10" data-form-controls-group-id="product-details">
+                                                            <h3>Air Top 2000 ST diesel 2kw, 12V med MultiControl</h3>
+                                                            <p class="product-container-contains" style="text-align: left">
+                                                                Ovenstående varmerkit indeholder foruden varmeren:<br>
+                                                                1. brændstofspumpe med specielt lyddæmpet beslag,<br>
+                                                                2. universal monteringsbeslag for varmer,<br>
+                                                                3. udstødningslyddæmper,<br>
+                                                                4. indsugningslyddæmper,<br>
+                                                                5. skroggennemføring,<br>
+                                                                6. dykrør for tank,<br>
+                                                                7. brændstofsfilter,<br>
+                                                                8. 5m mecanylslange for brændstoffremføring,<br>
+                                                                9. specielt ledningsnet,<br>
+                                                                10. temperatur fjernføler,<br>
+                                                                11. diverse fittings,<br>
+                                                                12. Digital panel (MultiControl) til temperaturkontrol.
+                                                            </p>
+                                                            <a href="#benefits" class="more-info">Mere information</a>
+                                                            <form>
+                                                                <label for="product-select-value"></label><select id="product-select-value" class="product-select-value">
+                                                                <option>12 mdr.</option>
+                                                                <option>24 mdr.</option>
+                                                            </select>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
                                 <h5>€32.42</h5>
@@ -726,7 +987,96 @@
                             <div class="content-center-product">
                                 <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
                                 <div class="dropdown-product-menu-photo">
-                                    <a href="">Se kort info</a>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        <a >Se kort info</a>
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="max-width: 90%">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">details Product</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid" style="overflow: hidden">
+                                                    <div class="row product-container">
+                                                        <div class="offset-lg-1 col-12 col-lg-7 product-container-left-content">
+                                                            <h1 class="text-center">Air Top 2000 ST diesel 2kw, 12V, inkl. kit</h1>
+                                                            <div id="mainCarousel" class="carousel">
+                                                                <div class="carousel__slide " data-src="./dkk/images/fotorama1.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom"  src="./dkk/images/fotorama1.jpg" data-zoom-image="./dkk/images/largefotorama1.jpg" alt="fotorama1" >
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="/dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2" xoriginal="images/fotorama2.jpg">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama3.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama3.jpg" data-zoom-image="./dkk/images/largefotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                            <div id="thumbCarousel" class="carousel">
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama1.jpg" alt="fotorama1">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-lg-4 product-container-right-content" >
+                                                            <h5 class="stock" >På lager</h5>
+                                                            <h5 class="product-model-varenr">Model/varenr.: 9034777C</h5>
+                                                            <h2>€1,343.33</h2>
+                                                            <h6 class="last-price">€1,679.33</h6>
+                                                            <h5 class="text-bold">Du sparer: €336.00</h5>
+                                                            <h5 class="text-bold product-model">Model: 12 Volt DIESEL</h5>
+                                                            <h5 class="text-bold">Effekt (KW): 2 KW</h5>
+                                                            <button class="buy-button">Læg i kurv</button>
+                                                            <input class="form-controls " id="article-qty-103729" name="quantity[103729]" type="number" value="1" min="1" step="1" data-quantity-in-stock="10" data-form-controls-group-id="product-details">
+                                                            <h3>Air Top 2000 ST diesel 2kw, 12V med MultiControl</h3>
+                                                            <p class="product-container-contains" style="text-align: left">
+                                                                Ovenstående varmerkit indeholder foruden varmeren:<br>
+                                                                1. brændstofspumpe med specielt lyddæmpet beslag,<br>
+                                                                2. universal monteringsbeslag for varmer,<br>
+                                                                3. udstødningslyddæmper,<br>
+                                                                4. indsugningslyddæmper,<br>
+                                                                5. skroggennemføring,<br>
+                                                                6. dykrør for tank,<br>
+                                                                7. brændstofsfilter,<br>
+                                                                8. 5m mecanylslange for brændstoffremføring,<br>
+                                                                9. specielt ledningsnet,<br>
+                                                                10. temperatur fjernføler,<br>
+                                                                11. diverse fittings,<br>
+                                                                12. Digital panel (MultiControl) til temperaturkontrol.
+                                                            </p>
+                                                            <a href="#benefits" class="more-info">Mere information</a>
+                                                            <form>
+                                                                <label for="product-select-value"></label><select id="product-select-value" class="product-select-value">
+                                                                <option>12 mdr.</option>
+                                                                <option>24 mdr.</option>
+                                                            </select>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
                                 <h5>€32.42</h5>
@@ -744,7 +1094,96 @@
                             <div class="content-center-product">
                                 <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
                                 <div class="dropdown-product-menu-photo">
-                                    <a href="">Se kort info</a>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        <a >Se kort info</a>
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="max-width: 90%">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">details Product</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid" style="overflow: hidden">
+                                                    <div class="row product-container">
+                                                        <div class="offset-lg-1 col-12 col-lg-7 product-container-left-content">
+                                                            <h1 class="text-center">Air Top 2000 ST diesel 2kw, 12V, inkl. kit</h1>
+                                                            <div id="mainCarousel" class="carousel">
+                                                                <div class="carousel__slide " data-src="./dkk/images/fotorama1.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom"  src="./dkk/images/fotorama1.jpg" data-zoom-image="./dkk/images/largefotorama1.jpg" alt="fotorama1" >
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="/dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2" xoriginal="images/fotorama2.jpg">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama3.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama3.jpg" data-zoom-image="./dkk/images/largefotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                            <div id="thumbCarousel" class="carousel">
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama1.jpg" alt="fotorama1">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-lg-4 product-container-right-content" >
+                                                            <h5 class="stock" >På lager</h5>
+                                                            <h5 class="product-model-varenr">Model/varenr.: 9034777C</h5>
+                                                            <h2>€1,343.33</h2>
+                                                            <h6 class="last-price">€1,679.33</h6>
+                                                            <h5 class="text-bold">Du sparer: €336.00</h5>
+                                                            <h5 class="text-bold product-model">Model: 12 Volt DIESEL</h5>
+                                                            <h5 class="text-bold">Effekt (KW): 2 KW</h5>
+                                                            <button class="buy-button">Læg i kurv</button>
+                                                            <input class="form-controls " id="article-qty-103729" name="quantity[103729]" type="number" value="1" min="1" step="1" data-quantity-in-stock="10" data-form-controls-group-id="product-details">
+                                                            <h3>Air Top 2000 ST diesel 2kw, 12V med MultiControl</h3>
+                                                            <p class="product-container-contains" style="text-align: left">
+                                                                Ovenstående varmerkit indeholder foruden varmeren:<br>
+                                                                1. brændstofspumpe med specielt lyddæmpet beslag,<br>
+                                                                2. universal monteringsbeslag for varmer,<br>
+                                                                3. udstødningslyddæmper,<br>
+                                                                4. indsugningslyddæmper,<br>
+                                                                5. skroggennemføring,<br>
+                                                                6. dykrør for tank,<br>
+                                                                7. brændstofsfilter,<br>
+                                                                8. 5m mecanylslange for brændstoffremføring,<br>
+                                                                9. specielt ledningsnet,<br>
+                                                                10. temperatur fjernføler,<br>
+                                                                11. diverse fittings,<br>
+                                                                12. Digital panel (MultiControl) til temperaturkontrol.
+                                                            </p>
+                                                            <a href="#benefits" class="more-info">Mere information</a>
+                                                            <form>
+                                                                <label for="product-select-value"></label><select id="product-select-value" class="product-select-value">
+                                                                <option>12 mdr.</option>
+                                                                <option>24 mdr.</option>
+                                                            </select>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
                                 <p>Pris fra</p>
@@ -762,7 +1201,96 @@
                             <div class="content-center-product">
                                 <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
                                 <div class="dropdown-product-menu-photo">
-                                    <a href="">Se kort info</a>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        <a >Se kort info</a>
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="max-width: 90%">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">details Product</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid" style="overflow: hidden">
+                                                    <div class="row product-container">
+                                                        <div class="offset-lg-1 col-12 col-lg-7 product-container-left-content">
+                                                            <h1 class="text-center">Air Top 2000 ST diesel 2kw, 12V, inkl. kit</h1>
+                                                            <div id="mainCarousel" class="carousel">
+                                                                <div class="carousel__slide " data-src="./dkk/images/fotorama1.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom"  src="./dkk/images/fotorama1.jpg" data-zoom-image="./dkk/images/largefotorama1.jpg" alt="fotorama1" >
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="/dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2" xoriginal="images/fotorama2.jpg">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama3.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama3.jpg" data-zoom-image="./dkk/images/largefotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                            <div id="thumbCarousel" class="carousel">
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama1.jpg" alt="fotorama1">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-lg-4 product-container-right-content" >
+                                                            <h5 class="stock" >På lager</h5>
+                                                            <h5 class="product-model-varenr">Model/varenr.: 9034777C</h5>
+                                                            <h2>€1,343.33</h2>
+                                                            <h6 class="last-price">€1,679.33</h6>
+                                                            <h5 class="text-bold">Du sparer: €336.00</h5>
+                                                            <h5 class="text-bold product-model">Model: 12 Volt DIESEL</h5>
+                                                            <h5 class="text-bold">Effekt (KW): 2 KW</h5>
+                                                            <button class="buy-button">Læg i kurv</button>
+                                                            <input class="form-controls " id="article-qty-103729" name="quantity[103729]" type="number" value="1" min="1" step="1" data-quantity-in-stock="10" data-form-controls-group-id="product-details">
+                                                            <h3>Air Top 2000 ST diesel 2kw, 12V med MultiControl</h3>
+                                                            <p class="product-container-contains" style="text-align: left">
+                                                                Ovenstående varmerkit indeholder foruden varmeren:<br>
+                                                                1. brændstofspumpe med specielt lyddæmpet beslag,<br>
+                                                                2. universal monteringsbeslag for varmer,<br>
+                                                                3. udstødningslyddæmper,<br>
+                                                                4. indsugningslyddæmper,<br>
+                                                                5. skroggennemføring,<br>
+                                                                6. dykrør for tank,<br>
+                                                                7. brændstofsfilter,<br>
+                                                                8. 5m mecanylslange for brændstoffremføring,<br>
+                                                                9. specielt ledningsnet,<br>
+                                                                10. temperatur fjernføler,<br>
+                                                                11. diverse fittings,<br>
+                                                                12. Digital panel (MultiControl) til temperaturkontrol.
+                                                            </p>
+                                                            <a href="#benefits" class="more-info">Mere information</a>
+                                                            <form>
+                                                                <label for="product-select-value"></label><select id="product-select-value" class="product-select-value">
+                                                                <option>12 mdr.</option>
+                                                                <option>24 mdr.</option>
+                                                            </select>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
                                 <h5>€32.42</h5>
@@ -779,7 +1307,96 @@
                             <div class="content-center-product">
                                 <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
                                 <div class="dropdown-product-menu-photo">
-                                    <a href="">Se kort info</a>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        <a >Se kort info</a>
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="max-width: 90%">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">details Product</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid" style="overflow: hidden">
+                                                    <div class="row product-container">
+                                                        <div class="offset-lg-1 col-12 col-lg-7 product-container-left-content">
+                                                            <h1 class="text-center">Air Top 2000 ST diesel 2kw, 12V, inkl. kit</h1>
+                                                            <div id="mainCarousel" class="carousel">
+                                                                <div class="carousel__slide " data-src="./dkk/images/fotorama1.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom"  src="./dkk/images/fotorama1.jpg" data-zoom-image="./dkk/images/largefotorama1.jpg" alt="fotorama1" >
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="/dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2" xoriginal="images/fotorama2.jpg">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama3.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama3.jpg" data-zoom-image="./dkk/images/largefotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                            <div id="thumbCarousel" class="carousel">
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama1.jpg" alt="fotorama1">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-lg-4 product-container-right-content" >
+                                                            <h5 class="stock" >På lager</h5>
+                                                            <h5 class="product-model-varenr">Model/varenr.: 9034777C</h5>
+                                                            <h2>€1,343.33</h2>
+                                                            <h6 class="last-price">€1,679.33</h6>
+                                                            <h5 class="text-bold">Du sparer: €336.00</h5>
+                                                            <h5 class="text-bold product-model">Model: 12 Volt DIESEL</h5>
+                                                            <h5 class="text-bold">Effekt (KW): 2 KW</h5>
+                                                            <button class="buy-button">Læg i kurv</button>
+                                                            <input class="form-controls " id="article-qty-103729" name="quantity[103729]" type="number" value="1" min="1" step="1" data-quantity-in-stock="10" data-form-controls-group-id="product-details">
+                                                            <h3>Air Top 2000 ST diesel 2kw, 12V med MultiControl</h3>
+                                                            <p class="product-container-contains" style="text-align: left">
+                                                                Ovenstående varmerkit indeholder foruden varmeren:<br>
+                                                                1. brændstofspumpe med specielt lyddæmpet beslag,<br>
+                                                                2. universal monteringsbeslag for varmer,<br>
+                                                                3. udstødningslyddæmper,<br>
+                                                                4. indsugningslyddæmper,<br>
+                                                                5. skroggennemføring,<br>
+                                                                6. dykrør for tank,<br>
+                                                                7. brændstofsfilter,<br>
+                                                                8. 5m mecanylslange for brændstoffremføring,<br>
+                                                                9. specielt ledningsnet,<br>
+                                                                10. temperatur fjernføler,<br>
+                                                                11. diverse fittings,<br>
+                                                                12. Digital panel (MultiControl) til temperaturkontrol.
+                                                            </p>
+                                                            <a href="#benefits" class="more-info">Mere information</a>
+                                                            <form>
+                                                                <label for="product-select-value"></label><select id="product-select-value" class="product-select-value">
+                                                                <option>12 mdr.</option>
+                                                                <option>24 mdr.</option>
+                                                            </select>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
                                 <h5>€32.42</h5>
@@ -796,7 +1413,96 @@
                             <div class="content-center-product">
                                 <img class="content-center-product-img" src="dkk/images/yamaha-aluminium-propeller.jpg" alt="">
                                 <div class="dropdown-product-menu-photo">
-                                    <a href="">Se kort info</a>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                        <a >Se kort info</a>
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" style="max-width: 90%">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">details Product</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid" style="overflow: hidden">
+                                                    <div class="row product-container">
+                                                        <div class="offset-lg-1 col-12 col-lg-7 product-container-left-content">
+                                                            <h1 class="text-center">Air Top 2000 ST diesel 2kw, 12V, inkl. kit</h1>
+                                                            <div id="mainCarousel" class="carousel">
+                                                                <div class="carousel__slide " data-src="./dkk/images/fotorama1.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom"  src="./dkk/images/fotorama1.jpg" data-zoom-image="./dkk/images/largefotorama1.jpg" alt="fotorama1" >
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="/dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2" xoriginal="images/fotorama2.jpg">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama3.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama3.jpg" data-zoom-image="./dkk/images/largefotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide" data-src="./dkk/images/fotorama2.jpg" data-fancybox="gallery">
+                                                                    <img class="carousel-slide-img zoom" src="./dkk/images/fotorama2.jpg" data-zoom-image="./dkk/images/largefotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                            <div id="thumbCarousel" class="carousel">
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama1.jpg" alt="fotorama1">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama3.jpg" alt="fotorama3">
+                                                                </div>
+                                                                <div class="carousel__slide">
+                                                                    <img class="panzoom__content" src="./dkk/images/fotorama2.jpg" alt="fotorama2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-lg-4 product-container-right-content" >
+                                                            <h5 class="stock" >På lager</h5>
+                                                            <h5 class="product-model-varenr">Model/varenr.: 9034777C</h5>
+                                                            <h2>€1,343.33</h2>
+                                                            <h6 class="last-price">€1,679.33</h6>
+                                                            <h5 class="text-bold">Du sparer: €336.00</h5>
+                                                            <h5 class="text-bold product-model">Model: 12 Volt DIESEL</h5>
+                                                            <h5 class="text-bold">Effekt (KW): 2 KW</h5>
+                                                            <button class="buy-button">Læg i kurv</button>
+                                                            <input class="form-controls " id="article-qty-103729" name="quantity[103729]" type="number" value="1" min="1" step="1" data-quantity-in-stock="10" data-form-controls-group-id="product-details">
+                                                            <h3>Air Top 2000 ST diesel 2kw, 12V med MultiControl</h3>
+                                                            <p class="product-container-contains" style="text-align: left">
+                                                                Ovenstående varmerkit indeholder foruden varmeren:<br>
+                                                                1. brændstofspumpe med specielt lyddæmpet beslag,<br>
+                                                                2. universal monteringsbeslag for varmer,<br>
+                                                                3. udstødningslyddæmper,<br>
+                                                                4. indsugningslyddæmper,<br>
+                                                                5. skroggennemføring,<br>
+                                                                6. dykrør for tank,<br>
+                                                                7. brændstofsfilter,<br>
+                                                                8. 5m mecanylslange for brændstoffremføring,<br>
+                                                                9. specielt ledningsnet,<br>
+                                                                10. temperatur fjernføler,<br>
+                                                                11. diverse fittings,<br>
+                                                                12. Digital panel (MultiControl) til temperaturkontrol.
+                                                            </p>
+                                                            <a href="#benefits" class="more-info">Mere information</a>
+                                                            <form>
+                                                                <label for="product-select-value"></label><select id="product-select-value" class="product-select-value">
+                                                                <option>12 mdr.</option>
+                                                                <option>24 mdr.</option>
+                                                            </select>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <h4>YAMAHA 2 HK ALUMINIUM 3 BLADE</h4>
                                 <h5>€32.42</h5>
@@ -818,7 +1524,6 @@
         <!-- Иконка fa-chevron-up (Font Awesome) -->
         <i class="fa fa-chevron-up"></i>
     </div>
-
     <footer role="contentinfo">
         <div class="container-fluid footer-site">
             <div class="row">
@@ -882,11 +1587,20 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6"
+            crossorigin="anonymous">
+    </script>
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script src="dkk/owl-carousel/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script type="text/javascript" src="./js/jquery.ez-plus.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="./js/mainScript.js"></script>
     <script src="dkk/script.js" type="text/javascript"></script>
     <script type="application/ld+json">
         {
