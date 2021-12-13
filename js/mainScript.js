@@ -64,7 +64,7 @@ $(function() {
             lensFadeOut: 500,
             easing: true,
             zoomWindowWidth: 250,
-            zoomWindowHeight: 280,
+            zoomWindowHeight: 250,
             borderSize: 1,
             borderColour: '#888',
             lensBorderColour: '#37e80b',
