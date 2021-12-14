@@ -2807,3 +2807,44 @@ Carousel
      margin-top: 0px;
      margin-left: 0px;
 }
+
+
+
+/*start page info*/
+
+.page-info .breadcrumb{
+    background-color: transparent !important;
+    padding: 40px 0;
+}
+.page-info .breadcrumb .breadcrumb-item{
+    font-size: 13px;
+    color: #a6a6a6;
+}
+.page-info .breadcrumb .breadcrumb-item::before{
+    margin-right: 15px;
+    color: #a6a6a6;
+
+}
+.page-info .navigation-category .list-category .active a{
+    color: rgba(75, 74, 80, 0.85);
+    font-weight: bolder;
+}
+.page-info .text-infoPage{
+    padding: 80px 10px 30px 10px;
+
+}
+.page-info .text-infoPage h2{
+    margin-bottom: 33px;
+    font-size: 2.2em;
+
+}
+.page-info .text-infoPage p{
+    font-size: 13.5px;
+    color: #4b4a50;
+}
+@media only screen and (max-width: 992px){
+    .page-info   .category {
+        display: block;
+    }
+}
+/*end page info*/
