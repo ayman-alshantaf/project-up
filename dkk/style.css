@@ -1515,12 +1515,12 @@ input::-webkit-input-placeholder {
     }
 }
 
-.bi-grid-fill,
-.bi-border-width {
+.fa-th-large,
+.fa-list {
     font-size: 2rem;
 }
 
-.bi-grid-fill {
+.fa-th-large {
     margin-left: 48%;
     color: white;
     border-radius: 10px;
@@ -1532,7 +1532,7 @@ input::-webkit-input-placeholder {
     color: white;
     padding: 5px;
 }
-.bi-border-width {
+.fa-list {
     margin-left: 10px;
     color: #838383;
     border-radius: 5px;

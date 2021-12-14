@@ -83,17 +83,17 @@ $(function() {
             $('.ZoomContainer').remove();
         }
     });
-    $('.bi-grid-fill').on('click' , function (){
+    $('.fa-th-large').on('click' , function (){
         $('.content-center-products').fadeIn(300);
         $('.product-allDetail').fadeOut(300);
         $(this).addClass('active');
-        $('.bi-border-width').removeClass('active');
+        $('.fa-list').removeClass('active');
     })
-    $('.bi-border-width').on('click' , function (){
+    $('.fa-list').on('click' , function (){
         $('.content-center-products').fadeOut(300);
         $('.product-allDetail').fadeIn(300);
         $(this).addClass('active');
-        $('.bi-grid-fill').removeClass('active');
+        $('.fa-th-large').removeClass('active');
     })
 });
 
