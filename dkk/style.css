@@ -333,6 +333,15 @@ a.hover-border:focus:before {
 .userbar > a {
     line-height: 2rem;
 }
+@media only screen and (min-width: 900px) {
+    .minicart{
+        width: 100%;
+    }
+    .minicart > li{
+        width: 100% !important;
+    }
+
+}
 
 .minicart .count {
     margin: 0 0 0 -20px;
@@ -942,16 +951,18 @@ footer {
 .min-konto:hover {
     color: #2eb460;
 }
-
+.logo-head{
+    padding:0 20px  30px 17px;
+}
 .logo-head img {
     width: 100%;
     margin-top: 5px;
 }
 
 .logo-head .search {
-    width: 80%;
+    width: 85%;
     border: 1px solid #eaeaea;
-    padding: 10px;
+    padding: 8px;
     font-size: 14px;
 }
 
@@ -960,7 +971,7 @@ input::-webkit-input-placeholder {
 }
 
 .button-search {
-    padding: 8px 15px 11px 15px;
+    padding: 7px 15px 8px 15px;
     border: 0;
     background-color: #2eb460;
     color: white;
@@ -972,35 +983,128 @@ input::-webkit-input-placeholder {
 
 .basket {
     padding-left: 0;
+    padding-right: 0 !important;
+}
+.basket a{
+    width: 100%;
 }
 
-.basket .hover-border {
-    padding: 0;
+.basket .part-cart{
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.basket .part-cart i.fa-angle-down{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b1aeae;
+    transition: all .4s ease-in-out;
+}
+.basket .part-cart i.fa-angle-up{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b1aeae;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+.basket .part-cart:hover i.fa-angle-down{
+ opacity: 0;
+}
+.basket .part-cart:hover i.fa-angle-up{
+    opacity: 1;
+}
+.basket .part-cart .number-content-card{
+    width: 100%;
+    height: 85px;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 110%;
+    display: flex;
+    padding: 0px 25px;
+    font-size: 13px;
+    align-items: center;
+    border-top: 3px solid #ddd;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    z-index: 1000;
+}
+.basket .part-cart:hover .number-content-card{
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
 }
 
-.basket .fas {
-    background-color: #eaeaea;
-    padding: 14px 12px 12px 12px;
-    color: #2eb460;
-    border: 1px solid #cacaca;
+@media only screen and (max-width: 990px) {
+    .basket .part-cart > div{
+      padding: 10px 0;
+    }
 }
-
-.basket .fas:hover {
-    color: #222222;
-    background-color: white;
+.basket .part-cart .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 100%;
+    background: rgb(237, 237, 237);
+    border-right: 1px solid rgb(221, 221, 221);
+    color: #23b55c;
+    font-size: 20px;
+    transition: all .2s ease-in-out;
 }
-
-.basket-search {
-    padding: 6px 15px 4px 0;
-    border: 1px solid #cacaca;
-    border-left: none;
-    width: 80%;
+.basket .part-cart:hover .icon {
+    color: black;
 }
-
-.basket input::-webkit-input-placeholder {
-    color: #2eb460;
+.basket .part-cart .content-cart{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basket .part-cart .content-cart span{
     text-align: center;
+    color: #23b55c;
+    font-size: 13px;
+    text-transform: uppercase;
 }
+
+/*.basket .hover-border {*/
+/*    padding: 0;*/
+/*}*/
+
+/*.basket .fas {*/
+/*    background-color: #eaeaea;*/
+/*    padding: 12px 12px 11px 12px;*/
+/*    color: #2eb460;*/
+/*    border: 1px solid #cacaca;*/
+/*}*/
+
+/*.basket .fas:hover {*/
+/*    color: #222222;*/
+/*    background-color: white;*/
+/*}*/
+
+/*.basket-search {*/
+/*    padding: 5px 15px 2px 0;*/
+/*    border: 1px solid #cacaca;*/
+/*    border-left: none;*/
+/*    width: 80%;*/
+/*}*/
+
+/*.basket input::-webkit-input-placeholder {*/
+/*    color: #2eb460;*/
+/*    text-align: center;*/
+/*}*/
 
 .search-row {
     padding-right: 0;
@@ -1010,7 +1114,6 @@ input::-webkit-input-placeholder {
     .basket .fas {
         margin-left: 15px;
     }
-
     .basket .hover-border {
         width: 100%;
     }
@@ -1421,18 +1524,20 @@ input::-webkit-input-placeholder {
     margin-left: 48%;
     color: white;
     border-radius: 10px;
-    background-color: #838383;
     padding: 5px 10px;
+    color: #838383;
 }
-
+.content-center-bi .active{
+    background-color: #838383;
+    color: white;
+    padding: 5px;
+}
 .bi-border-width {
     margin-left: 10px;
     color: #838383;
+    border-radius: 5px;
 }
 
-.bi-border-width:hover {
-    color: #258349;
-}
 
 @media only screen and (max-width: 992px) {
     .category {
@@ -1605,7 +1710,57 @@ input::-webkit-input-placeholder {
     color: #75af48;
     margin-bottom: 20px;
 }
+.product-allDetail{
+    width: 100%;
+    padding: 30px;
+    display: none;
+}
+.product-allDetail .product-description{
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 15px 30px 65px 30px;
 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.product-allDetail .product-description .image-product {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-allDetail .product-description .image-product img{
+    width: 100%;
+}
+.product-allDetail .product-description .text-product{
+    padding: 10px 0px;
+}
+.product-allDetail .product-description .text-product h6{
+    font-weight: bolder;
+    font-size: 15px;
+}
+.product-allDetail .product-description .text-product p{
+    font-size: 15px;
+}
+.product-allDetail .product-description .text-product .price-product small{
+    font-size: 14px;
+    display: block;
+}
+.product-allDetail .product-description .text-product .price-product h5{
+    font-weight: bolder;
+}
+.product-allDetail .product-description .text-product .price-product button{
+    width: 130px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: #23b55c;
+    color: white;
+}
 .dropdown-product-menu-bottom {
     text-align: center;
     margin: 20px 0;

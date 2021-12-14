@@ -83,9 +83,19 @@ $(function() {
             $('.ZoomContainer').remove();
         }
     });
-
+    $('.bi-grid-fill').on('click' , function (){
+        $('.content-center-products').fadeIn(300);
+        $('.product-allDetail').fadeOut(300);
+        $(this).addClass('active');
+        $('.bi-border-width').removeClass('active');
+    })
+    $('.bi-border-width').on('click' , function (){
+        $('.content-center-products').fadeOut(300);
+        $('.product-allDetail').fadeIn(300);
+        $(this).addClass('active');
+        $('.bi-grid-fill').removeClass('active');
+    })
 });
-
 
 
 
