@@ -75,7 +75,6 @@ a.hover-border:hover:before,
 .navbar-nav > li > a {
     transition: all 0.25s;
 }
-
 /*
 .navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
     border-bottom: 3px solid #2eb460;
@@ -333,17 +332,10 @@ a.hover-border:focus:before {
 .userbar > a {
     line-height: 2rem;
 }
-@media only screen and (min-width: 900px) {
-    .minicart{
-        width: 100%;
-    }
-    .minicart > li{
-        width: 100% !important;
-    }
 
-}
 
-.minicart .count {
+.minicart
+.count {
     margin: 0 0 0 -20px;
     padding: 2px 5px 3px 4px;
     position: relative;
@@ -438,6 +430,9 @@ a.hover-border:focus:before {
 
 .sticky .top-icons {
     margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
 }
 
 .sticky .navbar-brand {
