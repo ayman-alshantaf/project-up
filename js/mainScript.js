@@ -99,8 +99,8 @@ $(function() {
     $('.filter-list > li').on('click' ,function (){
          $(this).parent().animate({
              left:'-100%',
-         },250);
-         $(this).children('ul').show(250);
+         },200);
+         $(this).children('ul').show(200);
          $(this).addClass('active');
          $(this).siblings().css({
              'display':'none'
@@ -154,8 +154,32 @@ $(function() {
         $(this).css({
             'display':'none'
         });
+        if ($(window).scrollTop() <= 150){
+            $('.product-list .container-filter-tablet').show();
+        }else {
+            $('.product-list .container-filter-tablet').hide();
+        }
     })
+    if ($(window).scrollTop() <= 150){
+        $('.product-list .container-filter-tablet').show();
+    }else {
+        $('.product-list .container-filter-tablet').hide();
+    }
 
+    $(window).scroll(function (){
+        if ($(window).scrollTop() <= 150){
+            $('.product-list .container-filter-tablet').show();
+        }else {
+            $('.product-list .container-filter-tablet').hide();
+
+        }
+        if ($(window).scrollTop() >= 150){
+            $('#sticky-header .container-filter-tablet').show();
+        }else {
+            $('#sticky-header .container-filter-tablet').hide();
+
+        }
+    })
 });
 
 

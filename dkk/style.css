@@ -413,23 +413,23 @@ a.hover-border:focus:before {
     opacity: 0.9;
     transform: translate(0, 0);
 }
-#sticky-header  .container-filter-tablet{
+  .container-filter-tablet{
     display: none;
 }
 
 
-#sticky-header .filter-tablet{
+ .filter-tablet{
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
 }
-#sticky-header .filter-tablet > div{
+ .filter-tablet > div{
     width: 100%;
     padding:15px 0px 15px 0;
     margin: 0 15px;
 }
-#sticky-header .filter-tablet .filter-button button{
+ .filter-tablet .filter-button button{
     width: 100%;
     padding: 5px 0;
     outline: none;
@@ -438,16 +438,16 @@ a.hover-border:focus:before {
     color: white;
     font-size: 14px;
 }
-#sticky-header .filter-tablet .selector-filter{
+ .filter-tablet .selector-filter{
     display: flex;
     align-items: center;
 }
-#sticky-header .filter-tablet .selector-filter label{
+ .filter-tablet .selector-filter label{
     display: block;
     margin-right: 10px;
     font-size: 14px;
 }
-#sticky-header .filter-tablet .selector-filter select{
+ .filter-tablet .selector-filter select{
     width: 100%;
     padding: 5px 0;
     outline: none;
@@ -455,7 +455,7 @@ a.hover-border:focus:before {
     color: #535353;
     font-size: 14px;
 }
-#sticky-header .filter-tablet .selector-filter select option:checked {
+ .filter-tablet .selector-filter select option:checked {
     text-align: center;
     color: #4b4a50;
 }
@@ -477,6 +477,9 @@ a.hover-border:focus:before {
     z-index: 9999;
     display: none;
 }
+.product-list .container-filter-tablet{
+    display: block;
+}
 
 #filter-modal .modal-backdrop {background-color: transparent !important;}
 
@@ -484,7 +487,7 @@ a.hover-border:focus:before {
     .section-filter-tablet{
         visibility: visible;
     }
-    #sticky-header .container-filter-tablet{
+     .container-filter-tablet{
         display: block;
     }
 }
