@@ -160,20 +160,41 @@ $(function() {
             $('.product-list .container-filter-tablet').hide();
         }
     })
-    if ($(window).scrollTop() <= 150){
+    if ($(window).scrollTop() <= 150 && $( window ).width() < 1000){
         $('.product-list .container-filter-tablet').show();
     }else {
         $('.product-list .container-filter-tablet').hide();
+
+    }
+    if ($(window).scrollTop() >= 150 && $( window ).width() < 1000){
+        $('#sticky-header .container-filter-tablet').show();
+    }else {
+        $('#sticky-header .container-filter-tablet').hide();
+
     }
 
     $(window).scroll(function (){
-        if ($(window).scrollTop() <= 150){
+        if ($(window).scrollTop() <= 150 && $( window ).width() < 1000){
             $('.product-list .container-filter-tablet').show();
         }else {
             $('.product-list .container-filter-tablet').hide();
 
         }
-        if ($(window).scrollTop() >= 150){
+        if ($(window).scrollTop() >= 150 && $( window ).width() < 1000){
+            $('#sticky-header .container-filter-tablet').show();
+        }else {
+            $('#sticky-header .container-filter-tablet').hide();
+
+        }
+    })
+    $(window).resize(function (){
+        if ($(window).scrollTop() <= 150 && $( window ).width() < 1000){
+            $('.product-list .container-filter-tablet').show();
+        }else {
+            $('.product-list .container-filter-tablet').hide();
+
+        }
+        if ($(window).scrollTop() >= 150 && $( window ).width() < 1000){
             $('#sticky-header .container-filter-tablet').show();
         }else {
             $('#sticky-header .container-filter-tablet').hide();
