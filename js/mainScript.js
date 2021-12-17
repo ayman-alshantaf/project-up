@@ -109,9 +109,10 @@ $(function() {
         $('.header-filter > .sub-list-header').addClass('active');
         $(this).find('.form-check-input').change(function (){
            if (this.checked){
-               $('.footer-list').addClass('active');
+               console.log();
+               $(this).closest('ul.sub-list-filter').find('.footer-list').addClass('active');
            }else {
-               $('.footer-list').removeClass('active');
+               $(this).closest('ul.sub-list-filter').find('.footer-list').removeClass('active');
 
            }
         })
