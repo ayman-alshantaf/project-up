@@ -99,8 +99,8 @@ $(function() {
     $('.filter-list > li').on('click' ,function (){
          $(this).parent().animate({
              left:'-100%',
-         },200);
-         $(this).children('ul').show(200);
+         },300);
+         $(this).children('ul').show(300);
          $(this).addClass('active');
          $(this).siblings().css({
              'display':'none'
